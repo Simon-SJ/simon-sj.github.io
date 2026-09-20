@@ -91,7 +91,7 @@ export const profile = [
 
 export const socials = [
 	{
-		"text": ".simonsj",
+		"text": "discord",
 		"link": "https://discordapp.com/users/595524051208765442",
 		"icon": "simple-icons/discord",
 	},
