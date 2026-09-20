@@ -22,6 +22,28 @@ export const openGraph = {
 		description: null,
 		image: null,
 	},
+	contactme: {
+		pageTitle: "simon / cantact-me",
+		title: "cantact-me",
+		postTitlePrefix: "simon / ",
+		description: null,
+		image: null,
+	},
+	contact: {
+		pageTitle: "simon / contact me",
+		title: "contact simon",
+		description: "send me a message.",
+		image: null,
+	},
+};
+
+// contact form -> cloudflare worker -> discord webhook
+export const contact = {
+	workerUrl: "https://portfolio.simon-899.workers.dev/",
+	// limits are kept under discord's embed limits (title 256, description 4096, field 1024)
+	maxSubjectLength: 100,
+	maxMessageLength: 2000,
+	maxReplyLength: 200,
 };
 
 export const giscus = {
