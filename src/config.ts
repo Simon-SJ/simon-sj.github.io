@@ -91,6 +91,12 @@ export const profile = [
 
 export const socials = [
 	{
+		"text": ".simonsj",
+		"link": "https://discordapp.com/users/595524051208765442",
+		"icon": "simple-icons/discord",
+		"copy": ".simonsj",
+	},
+	{
 		"text": "github",
 		"link": "https://github.com/Simon-SJ",
 		"icon": "simple-icons/github",
