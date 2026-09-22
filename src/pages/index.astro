@@ -10,7 +10,8 @@ import Icon from "../components/Icon.astro";
 import OverviewList from "../components/OverviewList.astro";
 
 const home = await getCollection("home");
-const posts = await getCollection("posts", post => !post.data.unlisted);
+//const posts = await getCollection("posts", post => !post.data.unlisted);
+const libary = await getCollection("libary", post => !post.data.unlisted);
 const projects = await getCollection("projects", post => !post.data.unlisted);
 
 const homeEntries = await Promise.all(
@@ -92,6 +93,21 @@ const homeEntries = await Promise.all(
 						title: post.data.title,
 						description: post.data.description,
 						date: post.data.releasedAt,
+						image: post.data.image,
+					}))
+				}
+			/>
+		</Card>
+		<Card title="recent books i've read" icon="lucide/book" href="/libary">
+			<PostList
+				limit={3}
+				posts={
+					libary.map((post) => ({
+						url: `/libary/${post.id}`,
+						tags: post.data.tags,
+						title: post.data.title,
+						description: post.data.description,
+						date: post.data.writtenAt,
 						image: post.data.image,
 					}))
 				}

@@ -8,13 +8,13 @@ export const openGraph = {
 		description: null,
 		image: null,
 	},
-	//blog: {
-	//	pageTitle: "simon / blog",
-	//	title: "nasimono's blog",
-	//	postTitlePrefix: "simon / ",
-	//	description: null,
-	//	image: null,
-	//},
+	libary: {
+		pageTitle: "simon / libary",
+		title: "simon's libary",
+		postTitlePrefix: "libary / ",
+		description: null,
+		image: null,
+	},
 	projects: {
 		pageTitle: "simon / projects",
 		title: "simon's projects",
